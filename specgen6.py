@@ -265,7 +265,7 @@ def main():
   # check if url of specification is given
   if (specurl == None or len(specurl)==0):
       print "No URL for the specification given"
-      specurl = "http://example.org/spec.html";
+      specurl = "";
    
   print "Use specification URL ",specurl
     

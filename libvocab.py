@@ -355,8 +355,8 @@ class Vocab(object):
   		for (term, label, comment, type) in relations:
   			p = Property(term)
   			# print "Made a property! "+str(p) + " using label: "+str(label)
-  			p.label = str(label)
-  			p.comment = str(comment)
+  			p.label = label
+  			p.comment = comment
   			p.type = self.niceName(type)
   			self.terms.append(p)
   			if (not str(p) in tmpproperties):
@@ -368,8 +368,8 @@ class Vocab(object):
   		for (term, label, comment, type) in relations:
   			c = Class(term)
   			# print "Made a class! "+str(c) + " using comment: "+comment
-  			c.label = str(label)
-  			c.comment = str(comment)
+  			c.label = label
+  			c.comment = comment
   			c.type = self.niceName(type)
   			self.terms.append(c)
   			if (not str(c) in tmpclasses):

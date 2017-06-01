@@ -1,0 +1,1566 @@
+x<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:owl="http://www.w3.org/2002/07/owl#"
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:olo="http://purl.org/ontology/olo/core#"
+xmlns:vann="http://purl.org/vocab/vann/"
+xmlns:bibo="http://purl.org/ontology/bibo/"
+xmlns:foaf="http://xmlns.com/foaf/0.1/"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+typeof="bibo:Document"
+about=""
+version="XHTML+RDFa 1.0">
+<head>
+  <title about="" property="dc:title">The DOAP Specification</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+  <base href="" />
+
+  <link href="./style.css" rel="stylesheet"  type="text/css" />
+  <link href="./xmlns-style.css" rel="stylesheet"  type="text/css" />
+  <link href="./groups.css" rel="stylesheet"  type="text/css" />
+
+  
+  <link about="http://usefulinc.com/ns/doap#" typeof="owl:Ontology" rel="dc:creator" href="foaflink" />
+  <link about="http://usefulinc.com/ns/doap#" rel="dc:creator" href="foaflink" />
+  <link about="" rel="dc:creator" href="foaflink" />
+  <link about="" rel="foaf:primaryTopic" rev="foaf:isPrimaryTopicOf" href="http://usefulinc.com/ns/doap#" />
+
+  
+
+</head>
+
+<body>
+  <h1><span about="http://usefulinc.com/ns/doap#" property="dc:title">The DOAP</span> <span about="http://usefulinc.com/ns/doap#" property="owl:versionInfo" datatype="xsd:decimal">0.01</span></h1>
+
+  <h2>Namespace Document <span about="http://usefulinc.com/ns/doap#" property="dc:date" content="2017-06-01T12:47:29" datatype="xsd:dateTime">01 June 2017</span></h2>
+<table class="header" border="0">
+  <tr>
+    <td>
+		<dl about="">
+			<dt>This version:</dt>
+			<dd><a rel="dc:hasVersion" 
+				rev="dc:isVersionOf" href=Version-URL">Version URL</a> (<a href="Version-File-URI">OWL</a>)</dd>
+
+			<dt>Latest version:</dt>
+			<dd><a href="http://usefulinc.com/ns/doap#">http://usefulinc.com/ns/doap#</a> (<a href="OWL-Link-Here">OWL</a>)</dd>
+
+			<dt>Previous version:</dt>
+			    ...
+			<dt>Authors:</dt>
+			<dd><a rel="rdfs:seeAlso" href="Link-To-Person-Here">Person</a> (<a rel="rdfs:seeAlso" href="Company-Address">Company Address</a>),<br/>
+				<a rel="rdfs:seeAlso" href="Link-To-Another-Person">another Person</a> (<a rel="rdfs:seeAlso" href="Company-Address">Company Address</a>)</dd>
+		</dl>
+
+		<p class="copyright"><span about="http://usefulinc.com/ns/doap#" property="dc:rights">Copyright &#169; 2012 Copyright holder here</span></p>
+	</td>
+    <td align="right">
+		<table class="infobox">
+			<tr>
+				<td rowspan="2">
+					<img src="http://wfnm.sourceforge.net/images/sourceforge_logo.jpg" width="150" alt="Sourceforge"/>
+				</td>
+				<td align="center">
+					<b>DOAP repository</b>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<a href="LinkToRepo">Source code, examples, graphics, ...</a>
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">
+					<img src="http://s.wordpress.org/about/images/buttons/buttonw-blue.png" width="150" alt="Wordpress" />
+				</td>
+				<td align="center">
+					<b>other Infos</b>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<a href="Another Link">Announcements, descriptions, use cases, ...</a>
+				</td>
+			</tr>
+		</table>
+	</td>
+  </tr>
+</table>
+
+  <div about="" rel="dc:conformsTo"
+     resource="http://www.w3.org/TR/rdfa-syntax"></div>
+  <p>
+    <a href="http://validator.w3.org/check?uri=referer"><img style="border: 0; float: right; padding: 5px;"
+        src="http://www.w3.org/Icons/valid-xhtml-rdfa"
+        alt="Valid XHTML + RDFa" height="31" width="88" /></a>
+
+  <!-- Creative Commons License -->
+  Example Licencing Information
+   <a href="http://creativecommons.org/licenses/by/1.0/"><img alt=
+  "Creative Commons License" style="border: 0; float: right; padding: 5px;" src=
+  "http://i.creativecommons.org/l/by/3.0/88x31.png" /></a> This work is licensed under a <a about="" rel="license dc:license" href= 
+  "http://creativecommons.org/licenses/by/3.0/" title="Creative Commons
+  Attribution License">Creative Commons
+  Attribution License</a>. This copyright applies to the <em>DOAP Specification</em> 
+  and accompanying documentation in RDF.
+ Regarding underlying technology, the <em>DOAP</em> uses W3C's <a href="http://www.w3.org/RDF/">RDF</a> technology, an
+  open Web standard that can be freely used by anyone.</p>
+  
+  <hr />
+
+
+<h2 id="sec-status">Abstract</h2>
+<p about="http://usefulinc.com/ns/doap#" property="dc:description">
+The <em>DOAP Specification</em> provides...
+</p>
+
+  <div class="status">
+    <h2>Status of This Document</h2>
+
+    <p about="">The template of this specification is derived from the  <a rel="rdfs:seeAlso" href="http://xmlns.com/foaf/spec/">FOAF 
+Vocabulary Specification</a>, which was created by <a rel="rdfs:seeAlso" href="http://danbri.org/">Dan Brickley</a> and <a rel="rdfs:seeAlso" href="http://nicecupoftea.org/">Libby Miller</a>, 
+and the <a rel="rdfs:seeAlso" href="http://musicontology.com/">Music Ontology Specification</a>, which was created by <a rel="rdfs:seeAlso" href="http://moustaki.org/">Yves Raimond</a>. It was 
+modified and extended by Bob Ferris. Furthermore, a modified and extended version of <a rel="rdfs:seeAlso" href="http://svn.foaf-project.org/foaftown/specgen/">Danbri's SpecGen version</a> was 
+used to generate most of the RDFa statements of the <em>Ordered List Ontology</em> for this specification (see <a rel="rdfs:seeAlso" 
+href="http://smiy.svn.sourceforge.net/viewvc/smiy/specgen/trunk/">here</a> for SpecGen version 6 by Bob Ferris).
+</p>
+
+...
+  <h2 id="sec-toc">Table of Contents</h2>
+
+  <ul>
+    <li><a href="#sec-glance">The DOAP at a glance</a></li>
+    <li><a href="#sec-example">Examples</a></li>
+    <li><a href="#sec-intro">Introduction</a></li>
+    <li><a href="#sec-for">What's the DOAP for?</a></li>
+    <li><a href="#sec-bg">Background</a></li>
+    <li><a href="#sec-standards">The DOAP and Standards</a></li>
+    <li><a href="#sec-evolution">Evolution and Extension of the DOAP</a></li>
+    <li><a href="#sec-crossref">The DOAP cross-reference: Listing the DOAP Classes and Properties</a></li>
+    <li><a href="#sec-extrefs">External Vocabulary References</a></li>
+    <li><a href="#sec-ack">Acknowledgments</a></li>
+    <li><a href="#sec-changes">Recent Changes</a></li>
+  </ul>
+
+
+  <a id="sec-glance"></a>
+  <h2 id="glance">The DOAP at a glance</h2>
+  
+   ...
+ <p>An a-z index of <em>DOAP</em> terms, by class (categories or types) and by property.</p>
+ 
+ 
+ <div class="azlist">
+<p>Classes: | <a href="#ArchRepository">ArchRepository</a> |  <a href="#BKRepository">BKRepository</a> |  <a href="#BazaarBranch">BazaarBranch</a> |  <a href="#CVSRepository">CVSRepository</a> |  <a href="#DarcsRepository">DarcsRepository</a> |  <a href="#GitRepository">GitRepository</a> |  <a href="#HgRepository">HgRepository</a> |  <a href="#Project">Project</a> |  <a href="#Repository">Repository</a> |  <a href="#SVNRepository">SVNRepository</a> |  <a href="#Specification">Specification</a> |  <a href="#Version">Version</a> | 
+</p>
+<p>Properties: | <a href="#anon-root">anon-root</a> |  <a href="#audience">audience</a> |  <a href="#blog">blog</a> |  <a href="#browse">browse</a> |  <a href="#bug-database">bug-database</a> |  <a href="#category">category</a> |  <a href="#created">created</a> |  <a href="#description">description</a> |  <a href="#developer">developer</a> |  <a href="#documenter">documenter</a> |  <a href="#download-mirror">download-mirror</a> |  <a href="#download-page">download-page</a> |  <a href="#file-release">file-release</a> |  <a href="#helper">helper</a> |  <a href="#homepage">homepage</a> |  <a href="#implements">implements</a> |  <a href="#language">language</a> |  <a href="#license">license</a> |  <a href="#location">location</a> |  <a href="#mailing-list">mailing-list</a> |  <a href="#maintainer">maintainer</a> |  <a href="#module">module</a> |  <a href="#name">name</a> |  <a href="#old-homepage">old-homepage</a> |  <a href="#os">os</a> |  <a href="#platform">platform</a> |  <a href="#programming-language">programming-language</a> |  <a href="#release">release</a> |  <a href="#repository">repository</a> |  <a href="#revision">revision</a> |  <a href="#screenshots">screenshots</a> |  <a href="#service-endpoint">service-endpoint</a> |  <a href="#shortdesc">shortdesc</a> |  <a href="#tester">tester</a> |  <a href="#translator">translator</a> |  <a href="#vendor">vendor</a> |  <a href="#wiki">wiki</a> | 
+</p>
+</div>
+ 
+ 
+  <p> Main <em>DOAP </em> terms, grouped in broad categories. </p>
+
+    
+    
+ 
+ 
+
+  <div style="clear: left;"></div>
+
+  <h2 id="sec-example">Example</h2>
+  
+    <p>A graphic of a simple example of an use case of the <em>DOAP</em></p>
+  
+    
+  <div class="example">
+  ....
+  </div>
+
+ <div style="clear: left;"></div>
+
+
+  <!-- ================================================================== -->
+
+
+ <h2 id="sec-intro">Introduction: DOAP Basics</h2>
+
+
+  <h2 id="sec-for">What's the DOAP for?</h2>
+
+...
+  <h2 id="sec-bg">Background</h2>
+
+  <p>TODO</p>
+
+  <h2 id="sec-standards">The DOAP and Standards</h2>
+
+  <p>TODO</p>
+
+  <p>TODO</p>
+
+  <h2 id="sec-nsdoc">The DOAP Description</h2>
+
+  <p>This specification serves as the <em>DOAP</em> "namespace document". ... </p>
+
+  <h3 id="sec-evolution">Evolution and Extension of the DOAP</h3>
+
+  ....
+
+  <h2 id="sec-crossref">The DOAP cross-reference: Listing the DOAP Classes and Properties</h2>
+
+  <p>The <em>DOAP</em> introduces the following classes and properties. </p>
+
+  <!-- the following is the script-generated list of classes and properties -->
+ 
+
+<!-- this is the a-z listing -->
+<div class="azlist">
+<p>Classes: | <a href="#ArchRepository">ArchRepository</a> |  <a href="#BKRepository">BKRepository</a> |  <a href="#BazaarBranch">BazaarBranch</a> |  <a href="#CVSRepository">CVSRepository</a> |  <a href="#DarcsRepository">DarcsRepository</a> |  <a href="#GitRepository">GitRepository</a> |  <a href="#HgRepository">HgRepository</a> |  <a href="#Project">Project</a> |  <a href="#Repository">Repository</a> |  <a href="#SVNRepository">SVNRepository</a> |  <a href="#Specification">Specification</a> |  <a href="#Version">Version</a> | 
+</p>
+<p>Properties: | <a href="#anon-root">anon-root</a> |  <a href="#audience">audience</a> |  <a href="#blog">blog</a> |  <a href="#browse">browse</a> |  <a href="#bug-database">bug-database</a> |  <a href="#category">category</a> |  <a href="#created">created</a> |  <a href="#description">description</a> |  <a href="#developer">developer</a> |  <a href="#documenter">documenter</a> |  <a href="#download-mirror">download-mirror</a> |  <a href="#download-page">download-page</a> |  <a href="#file-release">file-release</a> |  <a href="#helper">helper</a> |  <a href="#homepage">homepage</a> |  <a href="#implements">implements</a> |  <a href="#language">language</a> |  <a href="#license">license</a> |  <a href="#location">location</a> |  <a href="#mailing-list">mailing-list</a> |  <a href="#maintainer">maintainer</a> |  <a href="#module">module</a> |  <a href="#name">name</a> |  <a href="#old-homepage">old-homepage</a> |  <a href="#os">os</a> |  <a href="#platform">platform</a> |  <a href="#programming-language">programming-language</a> |  <a href="#release">release</a> |  <a href="#repository">repository</a> |  <a href="#revision">revision</a> |  <a href="#screenshots">screenshots</a> |  <a href="#service-endpoint">service-endpoint</a> |  <a href="#shortdesc">shortdesc</a> |  <a href="#tester">tester</a> |  <a href="#translator">translator</a> |  <a href="#vendor">vendor</a> |  <a href="#wiki">wiki</a> | 
+</p>
+</div>
+
+
+    <!-- The list of groups starts here -->
+
+    <!-- End of the groups -->
+
+
+<!-- and this is the bulk of the vocab descriptions -->
+<div class="termlist"><h3>Classes and Properties (full detail)</h3>
+<div class='termdetails'><br />
+
+<h2>Classes</h2>
+ 
+
+
+<div class="specterm" id="ArchRepository" about="http://usefulinc.com/ns/doap#ArchRepository" typeof="owl:Class">
+  			<h3>Class: doap:ArchRepository</h3> 
+  			<em property="rdfs:label" >GNU Arch repository</em> - <span property="rdfs:comment" >Úložiště zdrojových kódů GNU Arch.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Dépôt</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">リポジトリ</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repositorio</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Úložiště</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr><tr><th colspan="2">RDFS Class</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class"></span> </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#ArchRepository">#</a>] <!-- ArchRepository --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="BKRepository" about="http://usefulinc.com/ns/doap#BKRepository" typeof="rdfs:Class">
+  			<h3>Class: doap:BKRepository</h3> 
+  			<em property="rdfs:label" >BitKeeper Repository</em> - <span property="rdfs:comment" >BitKeeper source code repository.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Dépôt</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">リポジトリ</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repositorio</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Úložiště</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#Class"></span> </td></tr><tr><th colspan="2">RDFS Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#BKRepository">#</a>] <!-- BKRepository --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="BazaarBranch" about="http://usefulinc.com/ns/doap#BazaarBranch" typeof="rdfs:Class">
+  			<h3>Class: doap:BazaarBranch</h3> 
+  			<em property="rdfs:label" >Bazzarのリポジトリ</em> - <span property="rdfs:comment" >Bazaar source code branch.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Dépôt</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">リポジトリ</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repositorio</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Úložiště</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDFS Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#BazaarBranch">#</a>] <!-- BazaarBranch --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="CVSRepository" about="http://usefulinc.com/ns/doap#CVSRepository" typeof="rdfs:Class">
+  			<h3>Class: doap:CVSRepository</h3> 
+  			<em property="rdfs:label" >Repositorio CVS</em> - <span property="rdfs:comment" >Dépôt CVS du code source.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Dépôt</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">リポジトリ</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repositorio</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Úložiště</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#Class"></span> </td></tr><tr><th colspan="2">RDFS Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#CVSRepository">#</a>] <!-- CVSRepository --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="DarcsRepository" about="http://usefulinc.com/ns/doap#DarcsRepository" typeof="rdfs:Class">
+  			<h3>Class: doap:DarcsRepository</h3> 
+  			<em property="rdfs:label" >darcs Repository</em> - <span property="rdfs:comment" >darcs source code repository.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Dépôt</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">リポジトリ</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repositorio</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Úložiště</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDFS Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#DarcsRepository">#</a>] <!-- DarcsRepository --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="GitRepository" about="http://usefulinc.com/ns/doap#GitRepository" typeof="rdfs:Class">
+  			<h3>Class: doap:GitRepository</h3> 
+  			<em property="rdfs:label" >Git Repository</em> - <span property="rdfs:comment" >Git Quellcode-Versionierungssystem.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Dépôt</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">リポジトリ</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repositorio</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Úložiště</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDFS Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#GitRepository">#</a>] <!-- GitRepository --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="HgRepository" about="http://usefulinc.com/ns/doap#HgRepository" typeof="rdfs:Class">
+  			<h3>Class: doap:HgRepository</h3> 
+  			<em property="rdfs:label" >Mercurialのリポジトリ</em> - <span property="rdfs:comment" >ソースコードのMercurialのリポジトリ</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Dépôt</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">リポジトリ</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repositorio</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Úložiště</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDFS Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#HgRepository">#</a>] <!-- HgRepository --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="Project" about="http://usefulinc.com/ns/doap#Project" typeof="rdfs:Class">
+  			<h3>Class: doap:Project</h3> 
+  			<em property="rdfs:label" >Project</em> - <span property="rdfs:comment" >Projekt.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Properties include:</th>
+ <td>  <a href="#blog">blog</a>
+ <a href="#blog">blog</a>
+ <a href="#developer">developer</a>
+ <a href="#developer">developer</a>
+ <a href="#developer">developer</a>
+ <a href="#developer">developer</a>
+ <a href="#developer">developer</a>
+ <a href="#developer">developer</a>
+ <a href="#documenter">documenter</a>
+ <a href="#documenter">documenter</a>
+ <a href="#documenter">documenter</a>
+ <a href="#documenter">documenter</a>
+ <a href="#documenter">documenter</a>
+ <a href="#documenter">documenter</a>
+ <a href="#screenshots">screenshots</a>
+ <a href="#screenshots">screenshots</a>
+ <a href="#screenshots">screenshots</a>
+ <a href="#screenshots">screenshots</a>
+ <a href="#screenshots">screenshots</a>
+ <a href="#screenshots">screenshots</a>
+ <a href="#repository">repository</a>
+ <a href="#repository">repository</a>
+ <a href="#repository">repository</a>
+ <a href="#repository">repository</a>
+ <a href="#repository">repository</a>
+ <a href="#repository">repository</a>
+ <a href="#wiki">wiki</a>
+ <a href="#wiki">wiki</a>
+ <a href="#wiki">wiki</a>
+ <a href="#wiki">wiki</a>
+ <a href="#wiki">wiki</a>
+ <a href="#wiki">wiki</a>
+ <a href="#tester">tester</a>
+ <a href="#tester">tester</a>
+ <a href="#tester">tester</a>
+ <a href="#tester">tester</a>
+ <a href="#tester">tester</a>
+ <a href="#tester">tester</a>
+ <a href="#helper">helper</a>
+ <a href="#helper">helper</a>
+ <a href="#helper">helper</a>
+ <a href="#helper">helper</a>
+ <a href="#helper">helper</a>
+ <a href="#helper">helper</a>
+ <a href="#os">os</a>
+ <a href="#os">os</a>
+ <a href="#os">os</a>
+ <a href="#os">os</a>
+ <a href="#os">os</a>
+ <a href="#os">os</a>
+ <a href="#category">category</a>
+ <a href="#category">category</a>
+ <a href="#category">category</a>
+ <a href="#category">category</a>
+ <a href="#category">category</a>
+ <a href="#category">category</a>
+ <a href="#platform">platform</a>
+ <a href="#platform">platform</a>
+ <a href="#download-mirror">download-mirror</a>
+ <a href="#download-mirror">download-mirror</a>
+ <a href="#download-mirror">download-mirror</a>
+ <a href="#download-mirror">download-mirror</a>
+ <a href="#download-mirror">download-mirror</a>
+ <a href="#download-mirror">download-mirror</a>
+ <a href="#translator">translator</a>
+ <a href="#translator">translator</a>
+ <a href="#translator">translator</a>
+ <a href="#translator">translator</a>
+ <a href="#translator">translator</a>
+ <a href="#translator">translator</a>
+ <a href="#vendor">vendor</a>
+ <a href="#vendor">vendor</a>
+ <a href="#implements">implements</a>
+ <a href="#implements">implements</a>
+ <a href="#homepage">homepage</a>
+ <a href="#homepage">homepage</a>
+ <a href="#homepage">homepage</a>
+ <a href="#homepage">homepage</a>
+ <a href="#homepage">homepage</a>
+ <a href="#homepage">homepage</a>
+ <a href="#audience">audience</a>
+ <a href="#audience">audience</a>
+ <a href="#service-endpoint">service-endpoint</a>
+ <a href="#service-endpoint">service-endpoint</a>
+ <a href="#mailing-list">mailing-list</a>
+ <a href="#mailing-list">mailing-list</a>
+ <a href="#mailing-list">mailing-list</a>
+ <a href="#mailing-list">mailing-list</a>
+ <a href="#mailing-list">mailing-list</a>
+ <a href="#mailing-list">mailing-list</a>
+ <a href="#programming-language">programming-language</a>
+ <a href="#programming-language">programming-language</a>
+ <a href="#programming-language">programming-language</a>
+ <a href="#programming-language">programming-language</a>
+ <a href="#programming-language">programming-language</a>
+ <a href="#programming-language">programming-language</a>
+ <a href="#download-page">download-page</a>
+ <a href="#download-page">download-page</a>
+ <a href="#download-page">download-page</a>
+ <a href="#download-page">download-page</a>
+ <a href="#download-page">download-page</a>
+ <a href="#download-page">download-page</a>
+ <a href="#maintainer">maintainer</a>
+ <a href="#maintainer">maintainer</a>
+ <a href="#maintainer">maintainer</a>
+ <a href="#maintainer">maintainer</a>
+ <a href="#maintainer">maintainer</a>
+ <a href="#maintainer">maintainer</a>
+ <a href="#language">language</a>
+ <a href="#language">language</a>
+ <a href="#release">release</a>
+ <a href="#release">release</a>
+ <a href="#release">release</a>
+ <a href="#release">release</a>
+ <a href="#release">release</a>
+ <a href="#release">release</a>
+ <a href="#old-homepage">old-homepage</a>
+ <a href="#old-homepage">old-homepage</a>
+ <a href="#old-homepage">old-homepage</a>
+ <a href="#old-homepage">old-homepage</a>
+ <a href="#old-homepage">old-homepage</a>
+ <a href="#old-homepage">old-homepage</a>
+ <a href="#bug-database">bug-database</a>
+ <a href="#bug-database">bug-database</a>
+ <a href="#bug-database">bug-database</a>
+ <a href="#bug-database">bug-database</a>
+ <a href="#bug-database">bug-database</a>
+ <a href="#bug-database">bug-database</a>
+ </td></tr>
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://xmlns.com/wordnet/1.6/Project"><a href="http://xmlns.com/wordnet/1.6/Project">http://xmlns.com/wordnet/1.6/:Project</a></span>
+ <span rel="rdfs:subClassOf" href="http://xmlns.com/foaf/0.1/Project"><a href="http://xmlns.com/foaf/0.1/Project">foaf:Project</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDFS Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#Project">#</a>] <!-- Project --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="Repository" about="http://usefulinc.com/ns/doap#Repository" typeof="rdfs:Class">
+  			<h3>Class: doap:Repository</h3> 
+  			<em property="rdfs:label" >Dépôt</em> - <span property="rdfs:comment" >ソースコードのリポジトリ</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Properties include:</th>
+ <td>  <a href="#anon-root">anon-root</a>
+ <a href="#anon-root">anon-root</a>
+ <a href="#anon-root">anon-root</a>
+ <a href="#anon-root">anon-root</a>
+ <a href="#anon-root">anon-root</a>
+ <a href="#anon-root">anon-root</a>
+ <a href="#location">location</a>
+ <a href="#location">location</a>
+ <a href="#location">location</a>
+ <a href="#location">location</a>
+ <a href="#location">location</a>
+ <a href="#location">location</a>
+ <a href="#browse">browse</a>
+ <a href="#browse">browse</a>
+ <a href="#browse">browse</a>
+ <a href="#browse">browse</a>
+ <a href="#browse">browse</a>
+ <a href="#browse">browse</a>
+ </td></tr>
+  			<tr><th>Used with:</th>
+ <td>  <a href="#repository">repository</a>
+ <a href="#repository">repository</a>
+ <a href="#repository">repository</a>
+ <a href="#repository">repository</a>
+ <a href="#repository">repository</a>
+ <a href="#repository">repository</a>
+</td></tr> <tr><th>Has sub class</th>
+ <td>  <a href="#ArchRepository">GNU Arch repository</a>
+ <a href="#ArchRepository">Repositorio GNU Arch</a>
+ <a href="#ArchRepository">GNU Arch repository</a>
+ <a href="#ArchRepository">Úložiště GNU Arch</a>
+ <a href="#ArchRepository">GNU Archのリポジトリ</a>
+ <a href="#ArchRepository">Dépôt GNU Arch</a>
+ <a href="#DarcsRepository">darcs Repository</a>
+ <a href="#DarcsRepository">Dépôt darcs</a>
+ <a href="#DarcsRepository">darcsのリポジトリ</a>
+ <a href="#DarcsRepository">Repositorio darcs</a>
+ <a href="#SVNRepository">Subversion Repository</a>
+ <a href="#SVNRepository">Repositorio Subversion</a>
+ <a href="#SVNRepository">Dépôt Subversion</a>
+ <a href="#SVNRepository">Subversion Repository</a>
+ <a href="#SVNRepository">Úložiště Subversion</a>
+ <a href="#SVNRepository">Subversionのリポジトリ</a>
+ <a href="#HgRepository">Mercurialのリポジトリ</a>
+ <a href="#HgRepository">Mercurial Repository</a>
+ <a href="#CVSRepository">Repositorio CVS</a>
+ <a href="#CVSRepository">CVSのリポジトリ</a>
+ <a href="#CVSRepository">Dépôt CVS</a>
+ <a href="#CVSRepository">CVS Repository</a>
+ <a href="#CVSRepository">Úložiště CVS</a>
+ <a href="#CVSRepository">CVS Repository</a>
+ <a href="#GitRepository">Git Repository</a>
+ <a href="#GitRepository">Git repository</a>
+ <a href="#GitRepository">Gitのリポジトリ</a>
+ <a href="#GitRepository">Dépôt Git</a>
+ <a href="#GitRepository">Úložiště Git</a>
+ <a href="#GitRepository">Repositorio Git</a>
+ <a href="#BazaarBranch">Bazzarのリポジトリ</a>
+ <a href="#BazaarBranch">Bazaar Branch</a>
+ <a href="#BKRepository">BitKeeper Repository</a>
+ <a href="#BKRepository">Úložiště BitKeeper</a>
+ <a href="#BKRepository">BitKeeper Repository</a>
+ <a href="#BKRepository">Repositorio BitKeeper</a>
+ <a href="#BKRepository">Dépôt BitKeeper</a>
+ <a href="#BKRepository">BitKeeperのリポジトリ</a>
+ <a href="http://usefulinc.com/ns/doap#ArchRepository">doap:ArchRepository</a>
+ <a href="http://usefulinc.com/ns/doap#DarcsRepository">doap:DarcsRepository</a>
+ <a href="http://usefulinc.com/ns/doap#SVNRepository">doap:SVNRepository</a>
+ <a href="http://usefulinc.com/ns/doap#HgRepository">doap:HgRepository</a>
+ <a href="http://usefulinc.com/ns/doap#CVSRepository">doap:CVSRepository</a>
+ <a href="http://usefulinc.com/ns/doap#GitRepository">doap:GitRepository</a>
+ <a href="http://usefulinc.com/ns/doap#BazaarBranch">doap:BazaarBranch</a>
+ <a href="http://usefulinc.com/ns/doap#BKRepository">doap:BKRepository</a>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDFS Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#Repository">#</a>] <!-- Repository --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="SVNRepository" about="http://usefulinc.com/ns/doap#SVNRepository" typeof="rdfs:Class">
+  			<h3>Class: doap:SVNRepository</h3> 
+  			<em property="rdfs:label" >Subversion Repository</em> - <span property="rdfs:comment" >Subversion Quellcode-Versionierungssystem.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Dépôt</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">リポジトリ</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repositorio</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Úložiště</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ <span rel="rdfs:subClassOf" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDFS Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#SVNRepository">#</a>] <!-- SVNRepository --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="Specification" about="http://usefulinc.com/ns/doap#Specification" typeof="rdfs:Class">
+  			<h3>Class: doap:Specification</h3> 
+  			<em property="rdfs:label" >明細書じ</em> - <span property="rdfs:comment" >あるシステムの詳しく書いた明細書。多分技術的なもの。</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Used with:</th>
+ <td>  <a href="#implements">implements</a>
+ <a href="#implements">implements</a>
+</td></tr> <tr><th>Sub class of</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://www.w3.org/2000/01/rdf-schema#Resource"><a href="http://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDFS Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#Specification">#</a>] <!-- Specification --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="Version" about="http://usefulinc.com/ns/doap#Version" typeof="rdfs:Class">
+  			<h3>Class: doap:Version</h3> 
+  			<em property="rdfs:label" >バーション</em> - <span property="rdfs:comment" >Versionsinformation eines Projekt Releases.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Properties include:</th>
+ <td>  <a href="#os">os</a>
+ <a href="#os">os</a>
+ <a href="#os">os</a>
+ <a href="#os">os</a>
+ <a href="#os">os</a>
+ <a href="#os">os</a>
+ <a href="#platform">platform</a>
+ <a href="#platform">platform</a>
+ <a href="#revision">revision</a>
+ <a href="#revision">revision</a>
+ <a href="#revision">revision</a>
+ <a href="#revision">revision</a>
+ <a href="#revision">revision</a>
+ <a href="#revision">revision</a>
+ <a href="#file-release">file-release</a>
+ <a href="#file-release">file-release</a>
+ <a href="#file-release">file-release</a>
+ <a href="#file-release">file-release</a>
+ </td></tr>
+  			<tr><th>Used with:</th>
+ <td>  <a href="#release">release</a>
+ <a href="#release">release</a>
+ <a href="#release">release</a>
+ <a href="#release">release</a>
+ <a href="#release">release</a>
+ <a href="#release">release</a>
+</td></tr> 
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDFS Class</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#Version">#</a>] <!-- Version --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><h2>Properties</h2>
+ 
+
+
+<div class="specterm" id="anon-root" about="http://usefulinc.com/ns/doap#anon-root" typeof="rdf:Property">
+  			<h3>Property: doap:anon-root</h3> 
+  			<em property="rdfs:label" >anonymous root</em> - <span property="rdfs:comment" >Dépôt pour accès anonyme.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Dépôt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">リポジトリ</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repositorio</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Úložiště</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2000/01/rdf-schema#Literal"><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#anon-root">#</a>] <!-- anon-root --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="audience" about="http://usefulinc.com/ns/doap#audience" typeof="rdf:Property">
+  			<h3>Property: doap:audience</h3> 
+  			<em property="rdfs:label" >目指したユーザ</em> - <span property="rdfs:comment" >Description of target user base</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2000/01/rdf-schema#Literal"><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#audience">#</a>] <!-- audience --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="blog" about="http://usefulinc.com/ns/doap#blog" typeof="rdf:Property">
+  			<h3>Property: doap:blog</h3> 
+  			<em property="rdfs:label" >ブログ</em> - <span property="rdfs:comment" >URI of a blog related to a project</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2000/01/rdf-schema#Resource"><a href="http://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#blog">#</a>] <!-- blog --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="browse" about="http://usefulinc.com/ns/doap#browse" typeof="rdf:Property">
+  			<h3>Property: doap:browse</h3> 
+  			<em property="rdfs:label" >navegar</em> - <span property="rdfs:comment" >Web browser interface to repository.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Dépôt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">リポジトリ</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repositorio</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Úložiště</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ </td></tr>
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#browse">#</a>] <!-- browse --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="bug-database" about="http://usefulinc.com/ns/doap#bug-database" typeof="rdf:Property">
+  			<h3>Property: doap:bug-database</h3> 
+  			<em property="rdfs:label" >suivi des bugs</em> - <span property="rdfs:comment" >Bug tracker for a project.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#bug-database">#</a>] <!-- bug-database --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="category" about="http://usefulinc.com/ns/doap#category" typeof="rdf:Property">
+  			<h3>Property: doap:category</h3> 
+  			<em property="rdfs:label" >category</em> - <span property="rdfs:comment" >Una categoría de proyecto.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#category">#</a>] <!-- category --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="created" about="http://usefulinc.com/ns/doap#created" typeof="rdf:Property">
+  			<h3>Property: doap:created</h3> 
+  			<em property="rdfs:label" >erstellt</em> - <span property="rdfs:comment" >Datum, kdy bylo něco vytvořeno ve formátu RRRR-MM-DD, např. 2004-04-05</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2000/01/rdf-schema#Literal"><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#created">#</a>] <!-- created --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="description" about="http://usefulinc.com/ns/doap#description" typeof="rdf:Property">
+  			<h3>Property: doap:description</h3> 
+  			<em property="rdfs:label" >descripción</em> - <span property="rdfs:comment" >Beschreibung eines Projekts als einfacher Text mit der Länge von 2 bis 4 Sätzen.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2000/01/rdf-schema#Literal"><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#description">#</a>] <!-- description --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="developer" about="http://usefulinc.com/ns/doap#developer" typeof="rdf:Property">
+  			<h3>Property: doap:developer</h3> 
+  			<em property="rdfs:label" >Entwickler</em> - <span property="rdfs:comment" >プロジェクトのソフトウェアの開発者</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://xmlns.com/foaf/0.1/Person"><a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#developer">#</a>] <!-- developer --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="documenter" about="http://usefulinc.com/ns/doap#documenter" typeof="rdf:Property">
+  			<h3>Property: doap:documenter</h3> 
+  			<em property="rdfs:label" >documenter</em> - <span property="rdfs:comment" >Spoluautor dokumentace projektu.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://xmlns.com/foaf/0.1/Person"><a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#documenter">#</a>] <!-- documenter --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="download-mirror" about="http://usefulinc.com/ns/doap#download-mirror" typeof="rdf:Property">
+  			<h3>Property: doap:download-mirror</h3> 
+  			<em property="rdfs:label" >download mirror</em> - <span property="rdfs:comment" >Zrcadlo stránky pro stažení softwaru.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#download-mirror">#</a>] <!-- download-mirror --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="download-page" about="http://usefulinc.com/ns/doap#download-page" typeof="rdf:Property">
+  			<h3>Property: doap:download-page</h3> 
+  			<em property="rdfs:label" >Seite zum Herunterladen</em> - <span property="rdfs:comment" >Web-Seite von der die Projekt-Software heruntergeladen werden kann.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#download-page">#</a>] <!-- download-page --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="file-release" about="http://usefulinc.com/ns/doap#file-release" typeof="rdf:Property">
+  			<h3>Property: doap:file-release</h3> 
+  			<em property="rdfs:label" >ファイル</em> - <span property="rdfs:comment" >URI adresa stažení asociované s revizí.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">バーション</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Versión</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Version</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Verze</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Version</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Version</a></span>
+ </td></tr>
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#file-release">#</a>] <!-- file-release --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="helper" about="http://usefulinc.com/ns/doap#helper" typeof="rdf:Property">
+  			<h3>Property: doap:helper</h3> 
+  			<em property="rdfs:label" >colaborador</em> - <span property="rdfs:comment" >Spoluautor projektu.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://xmlns.com/foaf/0.1/Person"><a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#helper">#</a>] <!-- helper --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="homepage" about="http://usefulinc.com/ns/doap#homepage" typeof="rdf:Property">
+  			<h3>Property: doap:homepage</h3> 
+  			<em property="rdfs:label" >página web</em> - <span property="rdfs:comment" >このプロジェクトのホームページのURL。このホームページは他のプロジェクトのホームページじゃないこと。</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://xmlns.com/foaf/0.1/homepage"><a href="http://xmlns.com/foaf/0.1/homepage">foaf:homepage</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr><tr><th colspan="2">Inverse Functional Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"></span> </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#homepage">#</a>] <!-- homepage --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="implements" about="http://usefulinc.com/ns/doap#implements" typeof="rdf:Property">
+  			<h3>Property: doap:implements</h3> 
+  			<em property="rdfs:label" >Implements specification</em> - <span property="rdfs:comment" >このプロジェクトが実装したシステムの明細書。標準やAPIや明細書のようなもの。</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://usefulinc.com/ns/doap#Specification"><a href="#Specification">明細書じ</a></span>
+ <span rel="rdfs:range" href="http://usefulinc.com/ns/doap#Specification"><a href="#Specification">Specification</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#implements">#</a>] <!-- implements --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="language" about="http://usefulinc.com/ns/doap#language" typeof="rdf:Property">
+  			<h3>Property: doap:language</h3> 
+  			<em property="rdfs:label" >言語</em> - <span property="rdfs:comment" >ISO language code a project has been translated into</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2000/01/rdf-schema#Literal"><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#language">#</a>] <!-- language --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="license" about="http://usefulinc.com/ns/doap#license" typeof="rdf:Property">
+  			<h3>Property: doap:license</h3> 
+  			<em property="rdfs:label" >Lizenz</em> - <span property="rdfs:comment" >Die URI einer RDF-Beschreibung einer Lizenz unter der die Software herausgegeben wird.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#license">#</a>] <!-- license --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="location" about="http://usefulinc.com/ns/doap#location" typeof="rdf:Property">
+  			<h3>Property: doap:location</h3> 
+  			<em property="rdfs:label" >emplacement du dépôt</em> - <span property="rdfs:comment" >lugar de un repositorio.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Dépôt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">リポジトリ</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repositorio</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Úložiště</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ </td></tr>
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#location">#</a>] <!-- location --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="mailing-list" about="http://usefulinc.com/ns/doap#mailing-list" typeof="rdf:Property">
+  			<h3>Property: doap:mailing-list</h3> 
+  			<em property="rdfs:label" >Mailing Liste</em> - <span property="rdfs:comment" >Mailing list home page or email address.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#mailing-list">#</a>] <!-- mailing-list --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="maintainer" about="http://usefulinc.com/ns/doap#maintainer" typeof="rdf:Property">
+  			<h3>Property: doap:maintainer</h3> 
+  			<em property="rdfs:label" >メンテナー</em> - <span property="rdfs:comment" >Desarrollador principal de un proyecto, un líder de proyecto.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://xmlns.com/foaf/0.1/Person"><a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#maintainer">#</a>] <!-- maintainer --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="module" about="http://usefulinc.com/ns/doap#module" typeof="rdf:Property">
+  			<h3>Property: doap:module</h3> 
+  			<em property="rdfs:label" >módulo</em> - <span property="rdfs:comment" >Module name of a repository.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>   <span rel="rdfs:domain" resource="[_:Nc39fb465ea484e66aa1753500b69ace4]"></span>
+  									<span about="[_:Nc39fb465ea484e66aa1753500b69ace4]" typeof="owl:Class"></span>
+  									<span about="[_:Nc39fb465ea484e66aa1753500b69ace4]" rel="owl:unionOf" resource="[_:N61930c87c6fc4977a9e5c23cbbe01d86]"></span>  <span about="[_:N61930c87c6fc4977a9e5c23cbbe01d86]" typeof="rdf:Description"></span>
+  									<span about="[_:N61930c87c6fc4977a9e5c23cbbe01d86]" rel="rdf:first" href="http://usefulinc.com/ns/doap#CVSRepository"><a href="http://usefulinc.com/ns/doap#CVSRepository">doap:CVSRepository</a></span>
+  									<span about="[_:N61930c87c6fc4977a9e5c23cbbe01d86]" rel="rdf:rest" resource="[_:N8113c4e105ca4eeba06a0bd4186fb055]"></span> or <span about="[_:N8113c4e105ca4eeba06a0bd4186fb055]" typeof="rdf:Description"></span>
+  														<span about="[_:N8113c4e105ca4eeba06a0bd4186fb055]" rel="rdf:first" href="http://usefulinc.com/ns/doap#ArchRepository"><a href="http://usefulinc.com/ns/doap#ArchRepository">doap:ArchRepository</a></span> <span about="[_:N8113c4e105ca4eeba06a0bd4186fb055]" rel="rdf:rest" resource="[_:Nfedd8e348cb0424c969c8b9d2806685b]"></span> or <span about="[_:Nfedd8e348cb0424c969c8b9d2806685b]" typeof="rdf:Description"></span>
+  														<span about="[_:Nfedd8e348cb0424c969c8b9d2806685b]" rel="rdf:first" href="http://usefulinc.com/ns/doap#BKRepository"><a href="http://usefulinc.com/ns/doap#BKRepository">doap:BKRepository</a></span> <span about="[_:Nfedd8e348cb0424c969c8b9d2806685b]" rel="rdf:rest" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"></span> </td></tr>
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#module">#</a>] <!-- module --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="name" about="http://usefulinc.com/ns/doap#name" typeof="rdf:Property">
+  			<h3>Property: doap:name</h3> 
+  			<em property="rdfs:label" >jméno</em> - <span property="rdfs:comment" >何かの名前</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2000/01/rdf-schema#Literal"><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span>
+ </td></tr><tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://www.w3.org/2000/01/rdf-schema#label"><a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#name">#</a>] <!-- name --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="old-homepage" about="http://usefulinc.com/ns/doap#old-homepage" typeof="owl:InverseFunctionalProperty">
+  			<h3>Property: doap:old-homepage</h3> 
+  			<em property="rdfs:label" >Alte Homepage</em> - <span property="rdfs:comment" >このプロジェクトの前のホームページ。他のプロジェクトの前のホームページじゃないこと。</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			<tr><th>Sub property of</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://xmlns.com/foaf/0.1/homepage"><a href="http://xmlns.com/foaf/0.1/homepage">foaf:homepage</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"></span> </td></tr><tr><th colspan="2">Inverse Functional Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#old-homepage">#</a>] <!-- old-homepage --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="os" about="http://usefulinc.com/ns/doap#os" typeof="rdf:Property">
+  			<h3>Property: doap:os</h3> 
+  			<em property="rdfs:label" >operační systém</em> - <span property="rdfs:comment" >Sistema opertivo al cuál está limitado el proyecto.  Omita esta propiedad si el proyecto no es específico
+		de un sistema opertaivo en particular.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">バーション</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Versión</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Version</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Verze</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Version</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Version</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2000/01/rdf-schema#Literal"><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#os">#</a>] <!-- os --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="platform" about="http://usefulinc.com/ns/doap#platform" typeof="rdf:Property">
+  			<h3>Property: doap:platform</h3> 
+  			<em property="rdfs:label" >プラットフォーム</em> - <span property="rdfs:comment" >Indicator of software platform (non-OS specific), e.g. Java, Firefox, ECMA CLR</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">バーション</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Versión</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Version</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Verze</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Version</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Version</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2000/01/rdf-schema#Literal"><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#platform">#</a>] <!-- platform --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="programming-language" about="http://usefulinc.com/ns/doap#programming-language" typeof="rdf:Property">
+  			<h3>Property: doap:programming-language</h3> 
+  			<em property="rdfs:label" >Programmiersprache</em> - <span property="rdfs:comment" >Lenguaje de programación en el que un proyecto es implementado o con el cuál pretende usarse.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2000/01/rdf-schema#Literal"><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#programming-language">#</a>] <!-- programming-language --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="release" about="http://usefulinc.com/ns/doap#release" typeof="rdf:Property">
+  			<h3>Property: doap:release</h3> 
+  			<em property="rdfs:label" >release</em> - <span property="rdfs:comment" >Un release (versión) de un proyecto.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">バーション</a></span>
+ <span rel="rdfs:range" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Versión</a></span>
+ <span rel="rdfs:range" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Version</a></span>
+ <span rel="rdfs:range" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Verze</a></span>
+ <span rel="rdfs:range" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Version</a></span>
+ <span rel="rdfs:range" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Version</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#release">#</a>] <!-- release --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="repository" about="http://usefulinc.com/ns/doap#repository" typeof="rdf:Property">
+  			<h3>Property: doap:repository</h3> 
+  			<em property="rdfs:label" >Repository</em> - <span property="rdfs:comment" >Source code repository.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Dépôt</a></span>
+ <span rel="rdfs:range" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">リポジトリ</a></span>
+ <span rel="rdfs:range" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repositorio</a></span>
+ <span rel="rdfs:range" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Úložiště</a></span>
+ <span rel="rdfs:range" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ <span rel="rdfs:range" href="http://usefulinc.com/ns/doap#Repository"><a href="#Repository">Repository</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#repository">#</a>] <!-- repository --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="revision" about="http://usefulinc.com/ns/doap#revision" typeof="rdf:Property">
+  			<h3>Property: doap:revision</h3> 
+  			<em property="rdfs:label" >リビジョンコート</em> - <span property="rdfs:comment" >Indentificador de la versión de un release de software.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">バーション</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Versión</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Version</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Verze</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Version</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Version"><a href="#Version">Version</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2000/01/rdf-schema#Literal"><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#revision">#</a>] <!-- revision --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="screenshots" about="http://usefulinc.com/ns/doap#screenshots" typeof="rdf:Property">
+  			<h3>Property: doap:screenshots</h3> 
+  			<em property="rdfs:label" >capturas de pantalla</em> - <span property="rdfs:comment" >Webová stránka projektu se snímky obrazovky.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#screenshots">#</a>] <!-- screenshots --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="service-endpoint" about="http://usefulinc.com/ns/doap#service-endpoint" typeof="rdf:Property">
+  			<h3>Property: doap:service-endpoint</h3> 
+  			<em property="rdfs:label" >サービスサイト</em> - <span property="rdfs:comment" >The URI of a web service endpoint where software as a service may be accessed</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2000/01/rdf-schema#Resource"><a href="http://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#service-endpoint">#</a>] <!-- service-endpoint --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="shortdesc" about="http://usefulinc.com/ns/doap#shortdesc" typeof="rdf:Property">
+  			<h3>Property: doap:shortdesc</h3> 
+  			<em property="rdfs:label" >Kurzbeschreibung</em> - <span property="rdfs:comment" >Short (8 or 9 words) plain text description of a project.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2000/01/rdf-schema#Literal"><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#shortdesc">#</a>] <!-- shortdesc --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="tester" about="http://usefulinc.com/ns/doap#tester" typeof="rdf:Property">
+  			<h3>Property: doap:tester</h3> 
+  			<em property="rdfs:label" >testeur</em> - <span property="rdfs:comment" >Ein Tester oder anderer Mitarbeiter der Qualitätskontrolle.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://xmlns.com/foaf/0.1/Person"><a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#tester">#</a>] <!-- tester --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="translator" about="http://usefulinc.com/ns/doap#translator" typeof="rdf:Property">
+  			<h3>Property: doap:translator</h3> 
+  			<em property="rdfs:label" >traducteur</em> - <span property="rdfs:comment" >Spoluautor překladu projektu.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://xmlns.com/foaf/0.1/Person"><a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#translator">#</a>] <!-- translator --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="vendor" about="http://usefulinc.com/ns/doap#vendor" typeof="rdf:Property">
+  			<h3>Property: doap:vendor</h3> 
+  			<em property="rdfs:label" >提供組織</em> - <span property="rdfs:comment" >Vendor organization: commercial, free or otherwise</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			<tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://xmlns.com/foaf/0.1/Organization"><a href="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</a></span>
+ </td></tr>
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#vendor">#</a>] <!-- vendor --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div><div class="specterm" id="wiki" about="http://usefulinc.com/ns/doap#wiki" typeof="rdf:Property">
+  			<h3>Property: doap:wiki</h3> 
+  			<em property="rdfs:label" >Wiki</em> - <span property="rdfs:comment" >Wiki-URL für die kollaborative Dikussion eines Projektes.</span> <br /><table style="th { float: top; }">
+  			<tr><th>Status:</th>
+  			<td><span property="vs:status" >unknown</span></td></tr>
+  			<tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Project</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Projet</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">プロジェクト</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Prijekt</a></span>
+ <span rel="rdfs:domain" href="http://usefulinc.com/ns/doap#Project"><a href="#Project">Proyecto</a></span>
+ </td></tr>
+  			
+ <tr><td>  <span rel="rdfs:isDefinedBy" href="http://usefulinc.com/ns/doap#"></span>
+ </td></tr><tr><th colspan="2">RDF Property</th>
+ <td>  </td></tr>
+  			</table>
+  			
+  			<p style="float: right; font-size: small;">[<a href="#wiki">#</a>] <!-- wiki --> [<a href="#glance">back to top</a>]</p>
+  			<br/>
+  			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+<h2 id="sec-extrefs">External Vocabulary References</h2>
+
+...
+
+
+<h3 id="extns_status">Status Vocabulary</h3>
+
+...
+
+  <h3 id="sec-ack">Acknowledgments</h3>
+
+  ....
+
+<h2 id="sec-changes">Recent Changes</h2>
+
+....
+
+</body>
+</html>
+
+
